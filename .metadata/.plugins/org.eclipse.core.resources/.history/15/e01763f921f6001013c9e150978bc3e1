@@ -1,0 +1,11 @@
+package com.Phonepe.PaymentService.TOMO;
+
+public class PhonePe implements Payment_Interface {
+
+	@Override
+	public void doPayment() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

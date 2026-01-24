@@ -1,0 +1,23 @@
+package com.Amazon.OrderService.Model;
+
+import com.Amazon.OrderService.Model.OrderService;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+//@RequestMapping("Order")
+public class OrderController {
+
+    private final OrderService orderService;
+
+    public OrderController(OrderService orderService) {
+        this.orderService = orderService;
+    }
+
+    @GetMapping("/order")
+    public String createOrder() {
+        orderService.placeOrder();
+        return "Order placed. Check console output.";
+    }
+}
