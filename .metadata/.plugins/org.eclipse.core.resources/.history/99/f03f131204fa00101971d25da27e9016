@@ -1,0 +1,5 @@
+package Flipkart.UserService.Controller;
+
+public class UserController {
+
+}
