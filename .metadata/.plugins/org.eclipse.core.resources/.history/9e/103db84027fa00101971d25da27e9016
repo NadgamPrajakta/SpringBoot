@@ -1,0 +1,5 @@
+package Zomato.FoodDeliveryApp.Module;
+
+public class RestaurantService {
+
+}
