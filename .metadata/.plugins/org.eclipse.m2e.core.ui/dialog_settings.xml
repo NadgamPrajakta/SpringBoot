@@ -2,6 +2,10 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\My Computers\Downloads\BookStore"/>
+			<item value="C:\Users\My Computers\Downloads\Employee"/>
+			<item value="C:\Users\My Computers\Downloads\Student"/>
+			<item value="C:\Users\My Computers\Downloads\Swiggy-Instamart"/>
 			<item value="C:\Users\My Computers\Downloads\RideBookingApp"/>
 			<item value="C:\Users\My Computers\Downloads\FoodDeliveryApp"/>
 			<item value="C:\Users\My Computers\Downloads\UserRegistration"/>
