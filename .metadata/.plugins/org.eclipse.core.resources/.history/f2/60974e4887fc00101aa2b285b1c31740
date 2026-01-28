@@ -1,0 +1,13 @@
+package Library.LibraryManagement.Demo;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component
+@Scope("singleton")
+public class LibraryService {
+
+    public String status() {
+        return "Library service initialized once";
+    }
+}

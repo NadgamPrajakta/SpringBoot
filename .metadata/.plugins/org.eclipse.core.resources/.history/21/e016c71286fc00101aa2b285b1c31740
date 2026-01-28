@@ -1,0 +1,13 @@
+package System.SystemMonitoring.monitoring;
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.ApplicationScope;
+
+@Component
+@ApplicationScope
+public class SystemMonitor {
+
+    public String health() {
+    	
+        return "System running normally";
+    }
+}

@@ -1,0 +1,5 @@
+package Hospita.HospitalAppointment.hospital;
+
+public class AppointmentController {
+
+}
