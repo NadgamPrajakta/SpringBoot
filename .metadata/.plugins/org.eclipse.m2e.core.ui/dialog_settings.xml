@@ -2,6 +2,14 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\My Computers\Downloads\SystemMonitoring"/>
+			<item value="C:\Users\My Computers\Downloads\OnlineCoursePlatform"/>
+			<item value="C:\Users\My Computers\Downloads\OnlineShoppingCart"/>
+			<item value="C:\Users\My Computers\Downloads\HospitalAppointment"/>
+			<item value="C:\Users\My Computers\Downloads\LibraryManagement"/>
+			<item value="C:\Users\My Computers\Downloads\CarDetails"/>
+			<item value="C:\Users\My Computers\Downloads\UserLoginSystem"/>
+			<item value="C:\Users\My Computers\Downloads\Order-Processing"/>
 			<item value="C:\Users\My Computers\Downloads\BookStore"/>
 			<item value="C:\Users\My Computers\Downloads\Employee"/>
 			<item value="C:\Users\My Computers\Downloads\Student"/>
@@ -9,10 +17,6 @@
 			<item value="C:\Users\My Computers\Downloads\RideBookingApp"/>
 			<item value="C:\Users\My Computers\Downloads\FoodDeliveryApp"/>
 			<item value="C:\Users\My Computers\Downloads\UserRegistration"/>
-			<item value="C:\Users\My Computers\Downloads\UserService"/>
-			<item value="C:\Users\My Computers\Downloads\OrderService\OrderService"/>
-			<item value="C:\Users\My Computers\Downloads\PaymentService (1)\PaymentService"/>
-			<item value="C:\Users\My Computers\Downloads\PaymentService\PaymentService"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
