@@ -1,0 +1,5 @@
+package Hospital.HospitalManagement.Controller;
+
+public class DoctorController {
+
+}

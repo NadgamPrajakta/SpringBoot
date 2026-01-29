@@ -1,0 +1,5 @@
+package Hospital.HospitalManagement.DTO;
+
+public class DoctorDTO {
+
+}
