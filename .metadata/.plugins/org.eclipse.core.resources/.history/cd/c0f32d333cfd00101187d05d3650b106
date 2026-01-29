@@ -1,0 +1,5 @@
+package Student.Management.Student.Entity;
+
+public class College {
+
+}

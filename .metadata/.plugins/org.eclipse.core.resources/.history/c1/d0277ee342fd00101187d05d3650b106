@@ -1,0 +1,48 @@
+package Student.Management.Student.Controller;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import Student.Management.Student.DTO.StudentDto;
+import Student.Management.Student.Entity.Student_1;
+
+@RestController
+@RequestMapping("/studentController")
+public class StudentController {
+
+    List<Student_1> db = new ArrayList<Student_1>();
+
+    @PostMapping("/add-student")
+    public Student_1 addStudent(@RequestBody Student_1 student) {
+
+        if (student != null) {
+            db.add(student);
+            System.out.println("Size of DB: " + db.size());
+            System.out.println(student.getName()
+                    + " added in College: "
+                    + student.getCollege().getCollegeName());
+        }
+
+        return student;
+    }
+
+    @GetMapping("/get-all")
+    public List<StudentDto> getAllStudents() {
+
+        return db.stream().map(s -> {
+            StudentDto dto = new StudentDto();
+            dto.setSid(s.getSid());
+            dto.setName(s.getName());
+            dto.setCollegeName(s.getCollege().getCollegeName());
+            dto.setUniversity(s.getCollege().getUniversity());
+            return dto;
+        }).collect(Collectors.toList());
+    }
+}
