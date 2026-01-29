@@ -1,0 +1,5 @@
+package Bank.BankingService.DTO;
+
+public class AccountDto {
+
+}
