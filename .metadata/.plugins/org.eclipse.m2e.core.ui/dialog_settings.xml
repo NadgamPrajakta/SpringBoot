@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\My Computers\Downloads\BankingService"/>
+			<item value="C:\Users\My Computers\Downloads\HospitalManagement"/>
 			<item value="C:\Users\My Computers\Downloads\SystemMonitoring"/>
 			<item value="C:\Users\My Computers\Downloads\OnlineCoursePlatform"/>
 			<item value="C:\Users\My Computers\Downloads\OnlineShoppingCart"/>
@@ -15,8 +17,6 @@
 			<item value="C:\Users\My Computers\Downloads\Student"/>
 			<item value="C:\Users\My Computers\Downloads\Swiggy-Instamart"/>
 			<item value="C:\Users\My Computers\Downloads\RideBookingApp"/>
-			<item value="C:\Users\My Computers\Downloads\FoodDeliveryApp"/>
-			<item value="C:\Users\My Computers\Downloads\UserRegistration"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

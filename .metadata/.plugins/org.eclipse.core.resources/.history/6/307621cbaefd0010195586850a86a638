@@ -1,0 +1,5 @@
+package Product.ProductCategory.Controller;
+
+public class ProductController {
+
+}

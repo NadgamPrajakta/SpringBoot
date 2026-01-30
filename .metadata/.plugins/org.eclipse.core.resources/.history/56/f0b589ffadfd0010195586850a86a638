@@ -1,0 +1,5 @@
+package Product.ProductCategory.Entity;
+
+public class Product {
+
+}

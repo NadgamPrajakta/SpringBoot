@@ -1,0 +1,5 @@
+package Product.ProductCategory.DTO;
+
+public class ProductDto {
+
+}
