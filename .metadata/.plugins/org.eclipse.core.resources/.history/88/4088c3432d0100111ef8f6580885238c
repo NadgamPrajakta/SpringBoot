@@ -1,0 +1,49 @@
+package com.example.organization.Services;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.example.organization.Entities.Company;
+import com.example.organization.Entities.Employee;
+import com.example.organization.Repository.CompanyRepository;
+import com.example.organization.Repository.EmployeeRepository;
+
+@Service
+public class EmployeeService {
+
+    private EmployeeRepository employeeRepo;
+    private CompanyRepository companyRepo;
+
+    public EmployeeService(EmployeeRepository employeeRepo, CompanyRepository companyRepo) {
+        this.employeeRepo = employeeRepo;
+        this.companyRepo = companyRepo;
+    }
+
+    public Employee addEmployee(Integer companyId, Employee employee) {
+
+        Company company = companyRepo.findById(companyId)
+                .orElseThrow(() -> new ResourceNotFoundException("Company not found with ID: " + companyId));
+
+        if (employee.getSalary() <= 0) {
+            throw new IllegalArgumentException("Salary must be greater than zero");
+        } else {
+            employee.setCompany(company);
+            return employeeRepo.save(employee);
+        }
+    }
+
+    public List<Employee> getAllEmployees() {
+        List<Employee> list = employeeRepo.findAll();
+
+        if (list.isEmpty()) {
+            throw new ResourceNotFoundException("No employees found");
+        }
+        return list;
+    }
+
+    public Employee getEmployeeById(Integer id) {
+        return employeeRepo.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Employee not found with ID: " + id));
+    }
+}

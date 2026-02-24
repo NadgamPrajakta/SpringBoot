@@ -1,0 +1,38 @@
+package com.example.organization.Controllers;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.*;
+
+import com.example.organization.Entities.Company;
+import com.example.organization.Services.CompanyService;
+
+@RestController
+@RequestMapping("/companies")
+public class CompanyController {
+
+    private CompanyService service;
+
+    public CompanyController(CompanyService service) {
+        this.service = service;
+    }
+
+    @PostMapping("/add")
+    public Company addCompany(@RequestBody Company company) {
+        return service.addCompany(company);
+    }
+
+    // Get All Companies
+    @GetMapping("/all")
+    public List<Company> getAllCompanies() {
+        return service.getAllCompanies();
+    }
+
+    // Get Company By ID
+    @GetMapping("/{id}")
+    public Company getCompanyById(@PathVariable Integer id) {
+        return service.getCompanyById(id);
+    }
+
+ 
+}

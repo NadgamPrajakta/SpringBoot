@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\My Computers\Downloads\employee-management"/>
+			<item value="C:\Users\My Computers\Downloads\Spring-Data-JPA"/>
 			<item value="C:\Users\My Computers\Downloads\BankingService"/>
 			<item value="C:\Users\My Computers\Downloads\HospitalManagement"/>
 			<item value="C:\Users\My Computers\Downloads\SystemMonitoring"/>
@@ -15,8 +17,6 @@
 			<item value="C:\Users\My Computers\Downloads\BookStore"/>
 			<item value="C:\Users\My Computers\Downloads\Employee"/>
 			<item value="C:\Users\My Computers\Downloads\Student"/>
-			<item value="C:\Users\My Computers\Downloads\Swiggy-Instamart"/>
-			<item value="C:\Users\My Computers\Downloads\RideBookingApp"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -28,6 +28,14 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>

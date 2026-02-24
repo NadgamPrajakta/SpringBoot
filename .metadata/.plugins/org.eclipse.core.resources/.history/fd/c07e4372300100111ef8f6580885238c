@@ -1,0 +1,66 @@
+package com.example.organization.Services;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.example.organization.Entities.Company;
+import com.example.organization.Exception.ResourceNotFoundException;
+import com.example.organization.Repository.CompanyRepository;
+@Service
+public class CompanyService {
+
+    private CompanyRepository companyRepo;
+
+    public CompanyService(CompanyRepository companyRepo) {
+        this.companyRepo = companyRepo;
+    }
+
+    // Add Company
+    public Company addCompany(Company company) {
+
+        if (company.getCompanyName() == null || company.getCompanyName().isEmpty()) {
+            throw new IllegalArgumentException("Company name cannot be empty");
+        }
+        else if (company.getLocation() == null || company.getLocation().isEmpty()) {
+            throw new IllegalArgumentException("Company location cannot be empty");
+        }
+        else {
+            return companyRepo.save(company);
+        }
+    }
+
+    // Get All Companies
+    public List<Company> getAllCompanies() {
+
+        List<Company> companies = companyRepo.findAll();
+
+        if (companies.isEmpty()) {
+            throw new ResourceNotFoundException("No companies found");
+        }
+        return companies;
+    }
+
+    // Get Company By ID
+    public Company getCompanyById(Integer id) {
+
+        if (companyRepo.existsById(id)) {
+            return companyRepo.findById(id).get();
+        }
+        else {
+            throw new ResourceNotFoundException("Company not found with ID: " + id);
+        }
+    }
+
+    // Delete Company
+    public String deleteCompany(Integer id) {
+
+        if (companyRepo.existsById(id)) {
+            companyRepo.deleteById(id);
+            return "Company deleted successfully";
+        }
+        else {
+            throw new ResourceNotFoundException("Company not found with ID: " + id);
+        }
+    }
+}
